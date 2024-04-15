@@ -1,0 +1,33 @@
+<div *ngIf="textoBoton == 'Capas Base'">
+    <input type="checkbox" (change)="onCheckboxChange('Limite Departamental')" checked> Limite Departamental
+    <br>
+    <input type="checkbox" (change)="onCheckboxChange('Limite Provincial')" checked> Limite Provincial
+    <br>
+    <input type="checkbox" (change)="onCheckboxChange('Limite Distrital')" checked> Limite Distrital
+    <br>
+    <input type="checkbox" (change)="onCheckboxChange('Cuenca hidrográfica')"> Cuenca hidrográfica
+    <br>
+    <input type="checkbox" (change)="onCheckboxChange('Red hídrica principal')" checked> Red hídrica principal
+    <!-- <input type="checkbox" (change)="onCheckboxChange('Red hídrica')" checked> Red hídrica -->
+    <br>
+    <input type="checkbox" (change)="onCheckboxChange('Capital distrital')"> Capital distrital
+    <br>
+    <input type="checkbox" (change)="onCheckboxChange('Capital departamental')"> Capital departamental
+    <br>
+    <input type="checkbox" (change)="onCheckboxChange('Capital provincial')" checked> Capital provincial
+</div>
+
+<div *ngIf="textoBoton == 'Economía'">
+
+    <input type="checkbox" (change)="onCheckboxChange('Empresas - Negocios')"> Empresas - Negocios
+    <br>
+    <input type="checkbox" (change)="onCheckboxChange('Ingreso Familiar')"> Ingreso Familiar
+    <br>
+    <input type="checkbox" (change)="onCheckboxChange('IDH 2019')"> IDH 2019
+    <br>
+    <input type="checkbox" (change)="onCheckboxChange('Número de Hogares')"> Número de Hogares
+
+</div>
+
+
+

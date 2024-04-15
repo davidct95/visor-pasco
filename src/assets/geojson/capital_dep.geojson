@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "capital_dep",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC::CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "idccpp_15": "1901010001", "ccpp": "CERRO DE PASCO", "codccpp": "0001", "distrito": "CHAUPIMARCA", "provincia": "PASCO", "departamen": "PASCO", "area": "URBANO", "capital": "CAPIT_ DEPARTAMENTAL", "iddpto": "19", "idprov": "1901" }, "geometry": { "type": "Point", "coordinates": [ -76.256678175999923, -10.683686410999945 ] } }
+]
+}
