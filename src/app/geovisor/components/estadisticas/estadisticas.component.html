@@ -1,0 +1,5 @@
+<div id="boton-estadisticas" (click)="openModal()">
+    <img src="../../../../assets/img/botones/flecha.png" alt="" id="button-flecha" [ngClass]="{'flipped': showModalEstadisticas}">
+</div>
+
+<app-modal-estadisticas [showModalEstadisticas]="showModalEstadisticas"></app-modal-estadisticas>

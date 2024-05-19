@@ -1,0 +1,14 @@
+<div id="categorias-buttons" *ngIf="showButtons">
+    <button (click)="openModal('cp')">CAPAS BASE</button>
+    <button (click)="openModal('ec')">ECONOMIA</button>
+    <button (click)="changeValueShowButtons()">SOCIAL</button>
+    <button (click)="changeValueShowButtons()">ECOLOGIA</button>
+    <button (click)="changeValueShowButtons()">GEOGRAFIA</button>
+</div>
+
+<div *ngIf="selectedLayer == 'cp'">
+    <app-modal-capas-base [showModal]="showModal" (hideModal)="closeModal($event)"></app-modal-capas-base>
+</div>
+<div *ngIf="selectedLayer == 'ec'">
+    <app-modal-capas-economia [showModal]="showModal" (hideModal)="closeModal($event)"></app-modal-capas-economia>
+</div>

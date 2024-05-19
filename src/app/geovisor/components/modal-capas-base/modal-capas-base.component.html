@@ -1,0 +1,25 @@
+<div id="modal" *ngIf="showModal" class="animate__animated animate__fadeIn animate__faster">
+    <div id="titulo-modal">
+        <p>BASE</p>
+        <img src="../../../../assets/img/botones/cerrar.png" alt="" class="button-close" (click)="closeModal()">
+    </div>
+
+    <div class="contenedor-modal">
+        <label for=""><input type="checkbox" [(ngModel)]="checkbox1base" (change)="sendDataCheckbox1base()"> Limite
+            Departamental</label>
+        <label for=""><input type="checkbox" [(ngModel)]="checkbox2base" (change)="sendDataCheckbox2base()"> Limite
+            Provincial</label>
+        <label for=""><input type="checkbox" [(ngModel)]="checkbox3base" (change)="sendDataCheckbox3base()"> Limite
+            Distrital</label>
+        <label for=""><input type="checkbox" [(ngModel)]="checkbox4base" (change)="sendDataCheckbox4base()"> Cuenca
+            hidrográfica</label>
+        <label for=""><input type="checkbox" [(ngModel)]="checkbox5base" (change)="sendDataCheckbox5base()"> Red hídrica
+            principal</label>
+        <label for=""><input type="checkbox" [(ngModel)]="checkbox6base" (change)="sendDataCheckbox6base()"> Capital
+            distrital</label>
+        <label for=""><input type="checkbox" [(ngModel)]="checkbox7base" (change)="sendDataCheckbox7base()"> Capital
+            departamental</label>
+        <label for=""><input type="checkbox" [(ngModel)]="checkbox8base" (change)="sendDataCheckbox8base()"> Capital
+            provincial</label>
+    </div>
+</div>

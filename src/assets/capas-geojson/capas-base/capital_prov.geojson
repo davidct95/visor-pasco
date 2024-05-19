@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "capital_prov",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "idccpp_15": "1901010001", "ccpp": "CERRO DE PASCO", "codccpp": "0001", "distrito": "CHAUPIMARCA", "provincia": "PASCO", "departamen": "PASCO", "area": "URBANO", "categoria": "CIUDAD", "capital": "CAPIT_ DEPARTAMENTAL", "iddpto": "19", "idprov": "1901", "layer": "cb_capprovx", "path": "C:/Documentos/proyecto_pasco/insumos/capital_provincial/cb_capprovx.shp" }, "geometry": { "type": "Point", "coordinates": [ -76.256678175999923, -10.683686410999945 ] } },
+{ "type": "Feature", "properties": { "idccpp_15": "1902010001", "ccpp": "YANAHUANCA", "codccpp": "0001", "distrito": "YANAHUANCA", "provincia": "DANIEL ALCIDES CARRION", "departamen": "PASCO", "area": "URBANO", "categoria": "CIUDAD", "capital": "CAPITAL PROVINCIAL", "iddpto": "19", "idprov": "1902", "layer": "cb_capprovx(1)", "path": "C:/Documentos/proyecto_pasco/insumos/capital_provincial/cb_capprovx(1).shp" }, "geometry": { "type": "Point", "coordinates": [ -76.516625562999934, -10.491333226999931 ] } },
+{ "type": "Feature", "properties": { "idccpp_15": "1903010001", "ccpp": "OXAPAMPA", "codccpp": "0001", "distrito": "OXAPAMPA", "provincia": "OXAPAMPA", "departamen": "PASCO", "area": "URBANO", "categoria": "CIUDAD", "capital": "CAPITAL PROVINCIAL", "iddpto": "19", "idprov": "1903", "layer": "cb_capprovx(2)", "path": "C:/Documentos/proyecto_pasco/insumos/capital_provincial/cb_capprovx(2).shp" }, "geometry": { "type": "Point", "coordinates": [ -75.404722271999901, -10.57422825999992 ] } }
+]
+}

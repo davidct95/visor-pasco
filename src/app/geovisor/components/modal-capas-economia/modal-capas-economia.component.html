@@ -1,0 +1,16 @@
+<div id="modal" *ngIf="showModal" class="animate__animated animate__fadeIn animate__faster">
+    <div id="titulo-modal">
+        <p>ECONOMIA</p>
+        <img src="../../../../assets/img/botones/cerrar.png" alt="" class="button-close" (click)="closeModal()">
+    </div>
+    <div class="contenedor-modal">
+        <label for=""><input type="checkbox" [(ngModel)]="checkbox1Economia" (change)="sendDataCheckbox1Economia()">
+            Empresas - Negocios</label>
+        <label for=""><input type="checkbox" [(ngModel)]="checkbox2Economia" (change)="sendDataCheckbox2Economia()" [disabled]="botonDesactivado"> Ingreso
+            Familiar</label>
+        <label for=""><input type="checkbox" [(ngModel)]="checkbox3Economia" (change)="sendDataCheckbox3Economia()" [disabled]="botonDesactivado"> IDH
+            2019</label>
+        <label for=""><input type="checkbox" [(ngModel)]="checkbox4Economia" (change)="sendDataCheckbox4Economia()" [disabled]="botonDesactivado"> Número
+            de Hogares</label>
+    </div>
+</div>

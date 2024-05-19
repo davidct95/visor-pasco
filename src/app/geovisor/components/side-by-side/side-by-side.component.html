@@ -1,0 +1,12 @@
+<div id="selectSide">
+  <select id="opcionesLeft" name="opciones" [(ngModel)]="selectedLeftOption" (change)="selectLeft($event)">
+    <option value="layer1">Ingreso Familiar</option>
+    <option value="layer2">IDH 2019</option>
+    <option value="layer3">Número de Hogares</option>
+  </select>
+  <select id="opcionesRight" name="opciones" [(ngModel)]="selectedRightOption" (change)="selectRight($event)">
+    <option value="layer1">Ingreso Familiar</option>
+    <option value="layer2">IDH 2019</option>
+    <option value="layer3">Número de Hogares</option>
+  </select>
+</div>

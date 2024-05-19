@@ -1,0 +1,134 @@
+<div id="titulo-modal">
+    <p>LEYENDA</p>
+    <img src="../../../../assets/img/botones/cerrar.png" alt="" class="button-close" (click)="closeModal()">
+</div>
+
+
+<div class="contenedor-modal">
+
+    <div *ngIf="limDep" class="leyenda-individual">
+        <div id="info-leyenda">
+            <img id="poligono" src="../../../../assets/img/leyenda/poligono-negro.png">
+            <p>Límite Departamental - Pasco</p>
+        </div>
+    </div>
+
+    <div *ngIf="limProv" class="leyenda-individual">
+        <div id="info-leyenda">
+            <img id="poligono" src="../../../../assets/img/leyenda/poligono-azul-oscuro.png">
+            <p>Límite Provincial - Pasco</p>
+        </div>
+    </div>
+
+    <div *ngIf="limDist" class="leyenda-individual">
+        <div id="info-leyenda">
+            <img id="poligono" src="../../../../assets/img/leyenda/poligono_punteado_negro.png">
+            <p>Límite Distrital - Pasco</p>
+        </div>
+    </div>
+
+    <div *ngIf="cuencaHidro" class="leyenda-individual">
+        <div id="info-leyenda">
+            <img id="poligono" src="../../../../assets/img/leyenda/poligono-verde.png">
+            <p>Cuenca Hidrográfica</p>
+        </div>
+    </div>
+
+    <div *ngIf="redHidriPrinc" class="leyenda-individual">
+        <div id="info-leyenda">
+            <img id="linea" src="../../../../assets/img/leyenda/linea-celeste.png">
+            <p>Red Hídrica Principal</p>
+        </div>
+    </div>
+
+    <div *ngIf="capDist" class="leyenda-individual">
+        <div id="info-leyenda">
+            <img id="poligono" src="../../../../assets/img/leyenda/punto_dist.png">
+            <p>Capital Distrital</p>
+        </div>
+    </div>
+
+    <div *ngIf="capDep" class="leyenda-individual">
+        <div id="info-leyenda">
+            <img id="poligono" src="../../../../assets/img/leyenda/punto_depar.png">
+            <p>Capital Departamental</p>
+        </div>
+    </div>
+
+    <div *ngIf="capProv" class="leyenda-individual">
+        <div id="info-leyenda">
+            <img id="poligono" src="../../../../assets/img/leyenda/punto_prov.png">
+            <p>Capital Provincial</p>
+        </div>
+    </div>
+
+    <div *ngIf="puntosEmpresas" class="leyenda-individual">
+        <div id="info-leyenda">
+            <img id="poligono" src="../../../../assets/img/leyenda/emp.png">
+            <p>Empresas - Negocios</p>
+        </div>
+    </div>
+
+    <div *ngIf="ingresoFamiliar && dataIngresoFam" class="leyenda-individual">
+        <p>INGRESO FAMILIAR</p>
+        <div style="display: flex;">
+            <!-- Primer div para los primeros 14 elementos -->
+            <div style="flex: 1;">
+                <div *ngFor="let item of dataIngresoFam!.slice(0, 14)" id="info-leyenda">
+                    <div [ngStyle]="{'background-color': item.colores}" class="poligono-color"></div>
+                    <p>{{ item.item2 }}</p>
+                </div>
+            </div>
+
+            <!-- Segundo div para los siguientes 14 elementos -->
+            <div style="flex: 1;">
+                <div *ngFor="let item of dataIngresoFam!.slice(14)" id="info-leyenda">
+                    <div [ngStyle]="{'background-color': item.colores}" class="poligono-color"></div>
+                    <p>{{ item.item2 }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="idh && dataIdh" class="leyenda-individual">
+        <p>INDICE DE DESARROLLO HUMANO - 2019</p>
+        <div style="display: flex;">
+            <!-- Primer div para los primeros 14 elementos -->
+            <div style="flex: 1;">
+                <div *ngFor="let item of dataIdh!.slice(0, 14)" id="info-leyenda">
+                    <div [ngStyle]="{'background-color': item.colores}" class="poligono-color"></div>
+                    <p>{{ item.item2 }}</p>
+                </div>
+            </div>
+
+            <!-- Segundo div para los siguientes 14 elementos -->
+            <div style="flex: 1;">
+                <div *ngFor="let item of dataIdh!.slice(14)" id="info-leyenda">
+                    <div [ngStyle]="{'background-color': item.colores}" class="poligono-color"></div>
+                    <p>{{ item.item2 }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="numHogares && dataNumHogares" class="leyenda-individual">
+        <p>NUMERO DE HOGARES</p>
+        <div style="display: flex;">
+            <!-- Primer div para los primeros 14 elementos -->
+            <div style="flex: 1;">
+                <div *ngFor="let item of dataNumHogares!.slice(0, 14)" id="info-leyenda">
+                    <div [ngStyle]="{'background-color': item.colores}" class="poligono-color"></div>
+                    <p>{{ item.item2 }}</p>
+                </div>
+            </div>
+
+            <!-- Segundo div para los siguientes 14 elementos -->
+            <div style="flex: 1;">
+                <div *ngFor="let item of dataNumHogares!.slice(14)" id="info-leyenda">
+                    <div [ngStyle]="{'background-color': item.colores}" class="poligono-color"></div>
+                    <p>{{ item.item2 }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

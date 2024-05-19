@@ -1,0 +1,13 @@
+<div *ngIf="showModalEstadisticas" id="modal-estadisticas" class="animate__animated animate__fadeInLeft">
+  <div id="titulo-modal">
+    <p>ESTADISTICAS</p>
+  </div>
+
+
+    <div *ngIf="showIngrFam">
+        <h2 class="titulo-estadistico">Ingreso Familiar</h2>
+        <plotly-plot [data]="graphIngrFamPasco.data" [layout]="graphIngrFamPasco.layout"></plotly-plot>
+        <plotly-plot [data]="graphIngrFamDanielAlcides.data" [layout]="graphIngrFamDanielAlcides.layout"></plotly-plot>
+        <plotly-plot [data]="graphIngrFamOxapampa.data" [layout]="graphIngrFamOxapampa.layout"></plotly-plot>
+    </div>
+</div>
