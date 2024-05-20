@@ -1,0 +1,12 @@
+<button mat-button [matMenuTriggerFor]="menu">
+    <img src="../../../../assets/img/capas.png" alt="" class="icon">
+</button>
+
+
+    <mat-menu #menu="matMenu" class="custom-menu"> 
+        <button mat-menu-item (click)="accion1('Capas Base')">Capas Base</button>
+        <button mat-menu-item (click)="accion1('Economía')">Economía</button>
+        <button mat-menu-item (click)="accion1('Sociología')">Sociología</button>
+        <button mat-menu-item (click)="accion1('Ecología')">Ecología</button>
+        <button mat-menu-item (click)="accion1('Geografía')">Geografía</button>
+    </mat-menu>
